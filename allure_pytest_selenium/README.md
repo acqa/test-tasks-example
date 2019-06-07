@@ -43,6 +43,7 @@ PyTest + Selenium + Allure Reports
 
     pytest --alluredir ./allure_result
 или
+
     pytest test.py --alluredir ./allure_result    
 
 Затем сгененировать HTML отчет и открыть его:
