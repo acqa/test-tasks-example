@@ -1,10 +1,11 @@
 PyTest + Selenium + Allure Reports
-----------------------------------
+---
 Здесь вы можете найти пример того, как можно 
 интегрировать PyTest, Selenium и Allure Reports.
 
 Необходимые шаги:
 ---
+
 1. Установка Allure. 
 Для Mac 
 
