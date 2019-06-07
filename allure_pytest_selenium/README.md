@@ -9,13 +9,15 @@ PyTest + Selenium + Allure Reports
 Для Mac 
 
     brew install allure
+    
 2. Установка плагина для pytest
 
-
     pip3 install allure-pytest
+    
 3. Запуск тестов с опцией --alluredir, указав директорию для размещения сырых результатов
 
     pytest --alluredir ./allure_result 
+    
 4. Генерация HTML отчета и последующее его открытие
 
     allure generate ./allure_result -c -o ./allure_report  &&  allure open
