@@ -32,6 +32,7 @@ PyTest + Selenium + Allure Reports
     brew install node
     npm install -g allure-commandline --save-dev
 Или
+
     brew install allure
     
 
