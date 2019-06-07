@@ -3,6 +3,24 @@ PyTest + Selenium + Allure Reports
 Здесь вы можете найти пример того, как можно 
 интегрировать PyTest, Selenium и Allure Reports.
 
+Необходимые шаги:
+----------------------------------
+1. Установка Allure. 
+Для Mac 
+
+    brew install allure
+2. Установка плагина для pytest
+
+
+    pip3 install allure-pytest
+3. Запуск тестов с опцией --alluredir, указав директорию для размещения сырых результатов
+
+    pytest --alluredir ./allure_result 
+4. Генерация HTML отчета и последующее его открытие
+
+    allure generate ./allure_result -c -o ./allure_report  &&  allure open
+
+
 Как получить Allure Report
 --------------------------
 
