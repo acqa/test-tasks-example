@@ -3,31 +3,6 @@ PyTest + Selenium + Allure Reports
 Здесь вы можете найти пример того, как можно 
 интегрировать PyTest, Selenium и Allure Reports.
 
-
-Как запустить
--------------
-
-Для запуска этих тестов вам потребуется скачать файл Geko-Driver для
-управления браузером Google Chrome.
-Скачать файл можно здесь:
-
-https://chromedriver.storage.googleapis.com/index.html?path=2.43/
-
-После того, как вы скачаете этот файл, вам нужно установить
-все зависимости:
-
-    pip3 install -r requirements.txt
-    
-И после всего этого уже можно запускать тесты:
-
-    python3 -m pytest -v --driver Chrome --driver-path /tests/chrome --alluredir ./allure_report
-
-Обратите внимание, что в данном случае я положил скачанный 
-на первом шаге дравер для браузера в папку /tests/ -
-(chrome - это имя бинарного файла). При запуске тестов вам нужно
-будет указать полный путь до этого драйвера.
-
-
 Как получить Allure Report
 --------------------------
 
@@ -56,3 +31,22 @@ https://chromedriver.storage.googleapis.com/index.html?path=2.43/
 
     brew install node
     npm install -g allure-commandline --save-dev
+Или
+    brew install allure
+    
+
+Как запустить
+-------------
+    
+Можно запускать тесты:
+
+    pytest --alluredir ./allure_result
+или
+    pytest test.py --alluredir ./allure_result    
+
+Затем сгененировать HTML отчет и открыть его:
+
+
+    allure generate ./allure_result -c -o ./allure_report  &&  allure open
+
+
