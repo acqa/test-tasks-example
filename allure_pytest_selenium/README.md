@@ -35,8 +35,7 @@ PyTest + Selenium + Allure Reports
 папку ./allure_report
 4) Сгененировать HTML отчет и открыть его:
 
-
-    allure generate ./allure_report  &&  allure open allure-report
+    allure generate ./allure_result -c -o ./allure_report && allure open
 
 
 После выполнения всех 5ти шагов в браузере должен открыться Allure отчет.
